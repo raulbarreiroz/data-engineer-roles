@@ -1,2 +1,1 @@
-# data-engineer-roles
-Learning repository for Data Engineer roles by seniority level
+Learning repository for Data Engineer. Check out the junior, semi-senior, and senior branches for specific level content.
