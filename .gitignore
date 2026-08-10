@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+domains/clicks/outbox/
+.env
+.pytest_cache/
