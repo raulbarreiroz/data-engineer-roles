@@ -1,0 +1,2 @@
+kafka-python>=2.0,<3
+orjson>=3.9,<4
