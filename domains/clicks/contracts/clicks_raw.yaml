@@ -1,0 +1,32 @@
+domain: clicks
+owner: clicks-platform
+dataset: clicks_raw
+version: v1
+topic: mesh.clicks.raw.v1
+sla:
+  freshness_seconds: 30
+  completeness: 0.99
+schema:
+  - name: event_id
+    type: string
+    required: true
+  - name: user_id
+    type: string
+    required: true
+  - name: session_id
+    type: string
+    required: true
+  - name: page
+    type: string
+    required: true
+  - name: referrer
+    type: string
+    required: false
+  - name: ts_ms
+    type: long
+    required: true
+consumers:
+  - sessions
+notes: >
+  Raw click firehose. Downstream domains must not join PII here -
+  enrich via the identity domain if needed.
