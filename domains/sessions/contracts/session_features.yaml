@@ -1,0 +1,23 @@
+domain: sessions
+owner: growth-analytics
+dataset: session_features
+version: v1
+input_topics:
+  - mesh.clicks.windows.v1
+output_table: lake.sessions.features
+sla:
+  freshness_minutes: 5
+schema:
+  - name: session_id
+    type: string
+  - name: user_id
+    type: string
+  - name: click_count
+    type: long
+  - name: distinct_pages
+    type: long
+  - name: window_start_ms
+    type: long
+notes: >
+  Sessions domain owns the productized session features.
+  Clicks domain owns the raw stream; this contract is the federated boundary.
