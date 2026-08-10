@@ -1,0 +1,6 @@
+# local spark jobs - pin lightly so CI/laptops do not fight each other
+pyspark>=3.5,<4
+pandas>=2.0,<3
+pyarrow>=14,<19
+
+apache-airflow>=2.8,<3
